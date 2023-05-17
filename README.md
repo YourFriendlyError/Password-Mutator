@@ -16,15 +16,15 @@ Windows users, please install GAWK from <a href="https://www.gnu.org/software/ga
 
 Arguments:
 
--p, --password\t\tThe password to generate variations for.
+-p, --password         The password to generate variations for.
 
--i, --iterations\tThe number of variations to generate (default: min=10x, max=40x) x = times repeating the loop which results in repeating the same variations.
+-i, --iterations       The number of variations to generate (default: min=10x, max=40x) x = times repeating the loop which results in repeating the same variations.
 
--o, --output\t\tThe file to write the generated variations to (optional).
+-o, --output           The file to write the generated variations to (optional).
 
--f, --password-file\tThe file containing passwords to generate variations for (optional).
+-f, --password-file    The file containing passwords to generate variations for (optional).
 
--d, --output-directory\tThe directory to place the generated password variations in (optional). Defaults to the script directory.
+-d, --output-directory The directory to place the generated password variations in (optional). Defaults to the script directory.
 
 Examples:
 
