@@ -102,7 +102,7 @@ P@\$\$W0rd
 
 \$> awk '!seen[$0]++' variations_example.txt > unique_variations.txt
 
-\$> cat new_output.txt
+\$> unique_variations.txt
 
 password
 
