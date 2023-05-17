@@ -101,6 +101,7 @@ P@\$\$W0rd
 *Only after you have generated and saved your password variations*
 
 \$> awk '!seen[$0]++' variations_example.txt > unique_variations.txt
+
 \$> cat new_output.txt
 
 password
