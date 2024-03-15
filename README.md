@@ -6,12 +6,6 @@ This is a simple, and basic, Python script that will generate the many possibili
 # Use cases
 <u>For educational purposes only.</u> Use this in CTF tournaments, create wordlists, red teaming if you have permissions, or hashcat.
 
-## Extra installation
-
-**This is optional and the script will work fine without it.**
-
-Windows users, please install GAWK from <a href="https://www.gnu.org/software/gawk/" target="_blank">GNU.org</a> and add it to the path. This tool will come in handy to weed out any duplicates after generating password variations.
-
 ## Usage
 
 Arguments:
@@ -45,221 +39,46 @@ password_variations.py -f passwords.txt -o output.txt
 password_variations.py -f passwords.txt -i 20 -d output_directory/
 
 # Variations output example
-## Non-unique
-\$> python3 password_variations.py -p password -i 20 -o variations_example.txt
+\$> python3 password_variations.py -p password -o variations_example.txt
 
+pAssword
 
-P@\$\$W0RD
+passWoRD
 
-P@\$\$W0rd
+pAsSWoRd
 
-P@\$\$W0Rd
+PaSswOrd
 
-P@\$\$W0rd
+paSSwOrd
 
-P@\$\$W0RD
+pASsWOrD
 
-P@\$\$W0Rd
+paSSwOrD
 
-P@\$\$W0RD
+pasSwORD
 
-P@\$\$W0Rd
+PasSWOrd
 
-P@\$\$W0rd
+pAsSWORd
 
-P@\$\$W0RD
+passWORd
 
-P@\$\$W0rd
+paSswOrd
 
-P@\$\$W0Rd
+pAssWord
 
-P@\$\$W0RD
+pASsWord
 
-P@\$\$W0rd
+PAsswOrd
 
-P@\$\$W0Rd
+PasSwoRd
 
-P@\$\$W0RD
+PASSWord
 
-P@\$\$W0rd
+pasSWorD
 
-P@\$\$W0Rd
+pasSWORD
 
-P@\$\$W0rd
-
-P@\$\$W0Rd
-
-P@\$\$W0rd
-
-P@\$\$W0RD
-
-P@\$\$W0rd
+pASSworD
 
 ...
-
-## Unique
-*Only after you have generated and saved your password variations*
-
-\$> awk '!seen[$0]++' variations_example.txt > unique_variations.txt
-
-\$> unique_variations.txt
-
-password
-
-p4SSw0Rd
-
-p4SSw0rd
-
-p4SSword
-
-p4ssword
-
-p4SSw0RD
-
-p@ssword
-
-p@55w0rd
-
-p@55word
-
-p@55w0rD
-
-P@SSw0rD
-
-P@ssword
-
-P@SSword
-
-P@SSw0rd
-
-Password
-
-p4SSW0Rd
-
-p4SSWord
-
-p4SSW0rd
-
-P@\$\$Word
-
-P@\$\$word
-
-P@\$\$W0Rd
-
-P@\$\$W0RD
-
-P@\$\$W0rd
-
-P455w0rD
-
-P455word
-
-P455w0rd
-
-P4ssword
-
-P455w0Rd
-
-p4\$\$Word
-
-p4\$\$W0rd
-
-p4\$\$word
-
-p4\$\$W0rD
-
-P4\$\$word
-
-P4\$\$w0rd
-
-P4\$\$w0rD
-
-P4\$\$w0Rd
-
-P@55word
-
-P@55Word
-
-P@55W0rd
-
-P@SSW0rd
-
-P@SSWord
-
-P4\$\$Word
-
-P4\$\$W0rd
-
-P455W0rd
-
-P455W0Rd
-
-P455Word
-
-P@55W0Rd
-
-P@55W0RD
-
-p@\$\$word
-
-p@\$\$W0rd
-
-p@\$\$Word
-
-P455W0RD
-
-P@SSW0rD
-
-p4\$\$w0rD
-
-p4\$\$w0rd
-
-p@SSW0rD
-
-p@SSW0rd
-
-p@SSWord
-
-p@SSword
-
-p455W0Rd
-
-p455word
-
-p455Word
-
-p455W0rd
-
-p455W0RD
-
-p455W0rD
-
-P4SSW0Rd
-
-P4SSW0RD
-
-P4SSWord
-
-P4SSW0rd
-
-p@SSw0rd
-
-p@\$\$W0RD
-
-p@\$\$W0Rd
-
-P4$$W0Rd
-
-p@55Word
-
-p@55W0Rd
-
-p@55W0rd
-
-p455w0rd
-
-p455w0RD
-
-p455w0Rd
-
-p@SSW0Rd
