@@ -4,15 +4,13 @@ This is a simple, and basic, Python script that will generate the many possibili
 
 
 # Use cases
-<u>For educational purposes only.</u> Use this in CTF tournaments, create wordlists, red teaming if you have permissions, or hashcat.
+<u>For educational purposes only.</u> Use this in CTF tournaments, create wordlists, red/purple/blue teaming, or password cracking.
 
 ## Usage
 
 Arguments:
 
 -p, --password         The password to generate variations for.
-
--i, --iterations       The number of variations to generate (default: min=10x, max=40x) x = times repeating the loop which results in repeating the same variations.
 
 -o, --output           The file to write the generated variations to (optional).
 
@@ -24,19 +22,15 @@ Examples:
 
 password_variations.py -p password
 
-password_variations.py -p password -i 20
-
 password_variations.py -p password -o output.txt
 
-password_variations.py -p password -i 20 -d output_directory/
+password_variations.py -p password -d output_directory/
 
 password_variations.py -f passwords.txt
 
-password_variations.py -f passwords.txt -i 20
-
 password_variations.py -f passwords.txt -o output.txt
 
-password_variations.py -f passwords.txt -i 20 -d output_directory/
+password_variations.py -f passwords.txt -d output_directory/
 
 # Variations output example
 \$> python3 password_variations.py -p password -o variations_example.txt
