@@ -63,10 +63,10 @@ def main(argv):
 	output_directory = os.path.dirname(os.path.abspath(__file__))
 
 	try:
-		opts, args = getopt.getopt(argv, "hp:i:o:f:d:", ["password=", "iterations=", "output=", "password-file=", "output-directory="])
+		opts, args = getopt.getopt(argv, "hp:o:f:d:", ["password=",  "output=", "password-file=", "output-directory="])
 	except getopt.GetoptError:
 		print(
-			'generate_password_variations.py -p <password> [-i <iterations>] [-o <output-file>] [-f <password-file>] [-d <output-directory>] -h for help')
+			'generate_password_variations.py -p <password> [-o <output-file>] [-f <password-file>] [-d <output-directory>] -h for help')
 		sys.exit(2)
 
 	for opt, arg in opts:
